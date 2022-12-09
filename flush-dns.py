@@ -31,4 +31,4 @@ try:
     print(resp.to_json_string())
 
 except TencentCloudSDKException as err:
-    print(err)
+     print(err)
