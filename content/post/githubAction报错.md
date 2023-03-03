@@ -1,7 +1,7 @@
 ---
 title: "GithubAction报错"
 date: 2023-03-03T11:10:49+08:00
-draft: true
+draft: false
 ---
 
 ### gitAction突然报错，不会自动构建发布了
