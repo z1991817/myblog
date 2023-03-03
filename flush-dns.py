@@ -10,12 +10,14 @@ from tencentcloud.cdn.v20180606 import cdn_client, models
 
 # 传入参数
 parser = argparse.ArgumentParser(description='-i <secretId> -k <secretKey>')
-parser.add_argument('-i', '--secretid', type=str, required=True, help='secretId')
-parser.add_argument('-k', '--secretkey', type=str, required=True, help='secretKey')
+parser.add_argument('-i', '--secretid', type=str,
+                    required=True, help='secretId')
+parser.add_argument('-k', '--secretkey', type=str,
+                    required=True, help='secretKey')
 args = parser.parse_args()
 
 try:
-    cred = credential.Credential(args.secretid,args.secretkey)
+    cred = credential.Credential(args.secretid, args.secretkey)
     httpProfile = HttpProfile()
     httpProfile.endpoint = "cdn.tencentcloudapi.com"
 
